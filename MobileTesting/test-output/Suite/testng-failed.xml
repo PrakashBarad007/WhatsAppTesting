@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="com.whatsApp.utilities.CustomListeners"/>
+  </listeners>
+  <test thread-count="5" name="WhatsApp Testing(failed)">
+    <classes>
+      <class name="Tests.CreateGroupChat">
+        <methods>
+          <include name="second_createGroupAndSendMessage" invocation-numbers="0 1"/>
+          <include name="first_openNewGroupPage" invocation-numbers="0"/>
+          <include name="TearDown"/>
+        </methods>
+      </class> <!-- Tests.CreateGroupChat -->
+    </classes>
+  </test> <!-- WhatsApp Testing(failed) -->
+</suite> <!-- Failed suite [Suite] -->
