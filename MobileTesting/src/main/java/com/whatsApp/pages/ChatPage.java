@@ -14,6 +14,7 @@ public class ChatPage {
 		PageFactory.initElements(new AppiumFieldDecorator(driver), this);
 	}
 	
+	
 	@AndroidFindBy(xpath="//android.widget.EditText[@text='Type a message']")
 	public WebElement chatInputField;
 	

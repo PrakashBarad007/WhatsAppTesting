@@ -3,12 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Tests.WhatsAppTest">
+      <class name="Tests.UploadStatus">
         <methods>
-          <include name="myFirstTest"/>
-          <include name="setupAppium"/>
+          <include name="TearDown"/>
+          <include name="updateStatus" invocation-numbers="0"/>
         </methods>
-      </class> <!-- Tests.WhatsAppTest -->
+      </class> <!-- Tests.UploadStatus -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

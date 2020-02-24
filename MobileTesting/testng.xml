@@ -7,8 +7,7 @@
 </listeners>
  <test thread-count="5" name="WhatsApp Testing">
     <classes>
-		<class name="Tests.SendMessage"/>
-       <class name="Tests.CreateGroupChat"/>
+		<class name="Tests.UploadStatus"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

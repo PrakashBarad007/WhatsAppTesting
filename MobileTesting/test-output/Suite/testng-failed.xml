@@ -7,13 +7,12 @@
   </listeners>
   <test thread-count="5" name="WhatsApp Testing(failed)">
     <classes>
-      <class name="Tests.CreateGroupChat">
+      <class name="Tests.UploadStatus">
         <methods>
-          <include name="second_createGroupAndSendMessage" invocation-numbers="0 1"/>
-          <include name="first_openNewGroupPage" invocation-numbers="0"/>
           <include name="TearDown"/>
+          <include name="updateStatus" invocation-numbers="0"/>
         </methods>
-      </class> <!-- Tests.CreateGroupChat -->
+      </class> <!-- Tests.UploadStatus -->
     </classes>
   </test> <!-- WhatsApp Testing(failed) -->
 </suite> <!-- Failed suite [Suite] -->

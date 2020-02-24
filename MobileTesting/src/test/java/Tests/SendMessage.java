@@ -15,7 +15,7 @@ public class SendMessage extends WhatsAppBase{
 	}
 
 	@Test(dataProviderClass=CommonDataProvider.class,dataProvider="singleContact")
-    public void sendMessageToFirstContact(String Username) throws IOException, InterruptedException{
+    public void sendMessageToSingleContact(String Username) throws IOException, InterruptedException{
 	
 	CustomMethods.openContactList();
 	CustomMethods.searchAndSelectContact(Username);

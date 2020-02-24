@@ -7,7 +7,7 @@ import com.relevantcodes.extentreports.ExtentReports;
 
 public class ExtentReportManage {
 	
-	private static ExtentReports extent;
+	public static ExtentReports extent;
 	
 	
 	public static ExtentReports getInstance(){

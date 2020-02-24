@@ -17,12 +17,12 @@ public class CustomMethods extends WhatsAppBase{
 	public static NewGroupPage newGroupPageObject;
 	public static Actions action;
 	
-	public static void openContactList(){
+	public static void openContactList() throws InterruptedException{
 		homePageObject = new HomePage(driver);
 		CommonKeywords.customClick(homePageObject.selectContactButton);
 	}
 	
-	public static void searchAndSelectContact(String username){
+	public static void searchAndSelectContact(String username) throws InterruptedException{
 		contactPageObject = new ContactPage(driver);
 		CommonKeywords.customClick(contactPageObject.searchIcon);
 		CommonKeywords.customClick(contactPageObject.searchInputField);
@@ -30,8 +30,9 @@ public class CustomMethods extends WhatsAppBase{
 		CommonKeywords.customClick(contactPageObject.searchedContact);
 		
 	}
+	
 
-	public static void sendMessage(String msg) {
+	public static void sendMessage(String msg) throws InterruptedException {
 		chatPageObject = new ChatPage(driver);
 		CommonKeywords.customClear(chatPageObject.chatInputField);
 		CommonKeywords.customClick(chatPageObject.chatInputField);
@@ -40,13 +41,13 @@ public class CustomMethods extends WhatsAppBase{
 	}
 	
 	
-	public static void selectNewGroupOption() {
+	public static void selectNewGroupOption() throws InterruptedException {
 		contactPageObject = new ContactPage(driver);
 		CommonKeywords.customClick(contactPageObject.newGroup);
 	}
 	
 
-	public static void searchAndSelectGroupMember(String username){
+	public static void searchAndSelectGroupMember(String username) throws InterruptedException{
 		newGroupPageObject = new NewGroupPage(driver);
 		contactPageObject = new ContactPage(driver);
 		
